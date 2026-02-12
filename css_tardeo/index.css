@@ -1,0 +1,48 @@
+/*** Pantalla de inicio ***/
+
+/* Fondo de pantalla */
+body {
+    background-image:url(/imagenes/PortadaT.jpg);
+    background-size:cover; /* para que ocupe toda la patalla */
+    background-position: center;
+    background-repeat: no-repeat;/* para no se repita la foto */
+    background-attachment: fixed;
+}
+
+/* Boton para aceder la página siguiente */
+.btn_comenzar {
+    background-color: #00A1FF;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    margin-top: 530px;
+    border:3px solid #EBEBEB;
+    border-radius: 18px 18px 18px 18px;
+    width: 11%;
+    font-size: 20px;
+    display: inline-block;
+    cursor: pointer;
+    min-width: 200px;
+
+}
+
+@media (min-width:320px)  { 
+    /* smartphones, retrato iPhone, retrato 480x320 teléfonos (Android) */
+        .btn_comenzar {
+        padding-right: 1em;
+        width: 200px;
+        }
+    
+}
+
+/* Pie de página */
+.pie-pagina {
+    margin: 5px 30px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    
+}
+
+

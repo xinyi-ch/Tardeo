@@ -1,0 +1,59 @@
+  /*** Pantalla de Login ***/
+
+  .Logo {
+    display:flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    width: auto;
+  }
+
+  .Logo > img{
+    min-width: 400px; 
+  }
+  
+  input[type=text],
+  input[type=password] {
+      width: 30%;
+      padding: 1.2% 2%;
+      margin: auto;
+      margin-top: 18px;
+      display:block;
+      border: 1px solid #EBEBEB;
+      box-sizing: border-box; /*para definir el ancho */
+      border-radius: 20px 20px 20px 20px;
+      font-display: flex;
+      min-width: 230px;
+  }
+
+  /* Establecer un estilo para todos los botones */
+  input[type=button] {
+      background-color: #00A1FF;
+      color: white;
+      padding: 1vw 2vw;
+      margin: 8px 0;
+      margin-top: 24px;
+      cursor: pointer;
+      border:3px solid #EBEBEB;
+      border-radius: 18px 18px 18px 18px;
+      width: 11%;
+      min-width: 8rem;
+      font-size: 1.2em;
+      display: inline-block;
+    
+  }
+ 
+  /* Agregar relleno a container */
+  .container-login {
+      padding: 16px;
+      text-align: center;
+  }
+
+  .container-olvidar {
+    margin-top: auto;
+    min-width: 300px;
+
+  }
+
+  
+  
+

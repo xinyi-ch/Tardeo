@@ -1,0 +1,160 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*BODY*/
+body {
+    background-color: #9baacf;
+    align-items: center;
+}
+
+
+.cosa {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    /* nueva línea */
+}
+
+.square {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square-izr-sup {
+    flex: 40%;
+    display: flex;
+    border: none;
+}
+
+.square-der-inf {
+    flex: 60%;
+    border: none;
+}
+
+.btn {
+
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    flex: 1;
+}
+
+.btn,
+#botonUno,
+#botonDos {
+    flex: 1;
+    background-color: #0088FF;
+    border: none;
+    border-radius: 6px;
+    margin: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #EBEBEB;
+    padding: 8px;
+}
+
+.search-bar {
+    width: 60%;
+    height: 34px;
+    flex: 3;
+    border-radius: 6px;
+    margin: 2px;
+    border-color: #0088FF;
+    background-color: #E4EBF5;
+}
+
+@media (max-width: 630px) {
+    .cosa {
+        flex-direction: column;
+    }
+
+    .square {
+        flex: 100%;
+    }
+
+    .square-der-inf {
+        /* cambio */
+        margin-top: 8px;
+    }
+}
+
+/*COSA RARA*/
+
+/* Contenedor de slider */
+.container{
+    margin: auto;
+    background-color: white;
+    width: 1200px;
+    padding: 20px;
+  }
+  /* Contenedor de slider */
+  
+  
+  /* Quita el estilo a las listas */
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  /* Quita el estilo a las listas */
+  
+  
+  ul.slider{
+    position: relative;
+    width: 1200px;
+    height: 450px;
+  }
+  
+  
+  ul.slider li { /* carrusel */
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0; /* Oculta la imagenes */
+      width: inherit; /*el tamaño se hereda del padre*/
+      height: inherit;/*el tamaño se hereda del padre*/
+      transition: opacity .5s; /*es para el tiempo y tipo de transición */
+      background:#fff;
+  }/* carrusel */
+  
+  /* tamaño de imagenes */
+  ul.slider li img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover; /*Se utiliza para llenar todo el espacio del carrusel sin deformar la imagen*/
+  }/* tamaño de imagenes */
+  
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  
+  /* Codigo de botones */
+  .menuVis{
+    text-align: center;
+    margin: 20px;
+  }
+  .menuVis, li{
+    display: inline-block;
+    text-align: center;
+  }
+  .menuVis, li, a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #0088FF;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
+  /* Codigo de botones */

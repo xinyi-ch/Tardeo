@@ -1,0 +1,251 @@
+/*COSA RARA*/
+
+/* Contenedor de slider 
+.container{
+    margin: auto;
+    background-color: white;
+    width: 1200px;
+    padding: 20px;
+  }
+  */
+  
+  /* CARRUSEL */
+    /* Quita el estilo a las listas */
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+    /* Quita el estilo a las listas */
+  ul.slider{
+    position:relative;
+    width: 100%;
+    height: 235px;
+  }
+    /* carrusel */
+  ul.slider li { 
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0; /* Oculta la imagenes */
+      width: inherit; /*el tamaño se hereda del padre*/
+      height: inherit;/*el tamaño se hereda del padre*/
+      transition: opacity .5s; /*es para el tiempo y tipo de transición */
+      background:#fff;
+  }/* carrusel */
+  
+  /* tamaño de imagenes 
+  ul.slider li img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover; Se utiliza para llenar todo el espacio del carrusel sin deformar la imagen
+  } tamaño de imagenes */
+  
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+    /* Codigo de botones */
+  .menuVis{
+    text-align: center;
+    margin: 20px;
+  }
+  .menuVis li{
+    display: inline-block;
+    text-align: center;
+  }
+  .menuVis li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #0088FF;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+  }
+  /* Codigo de botones */
+
+
+  /*CARDVIEW DE EVENTO*/
+.grid-container-1 {
+    display: grid;
+    background-color: #EBEBEB;
+    grid-template-columns: 160px 300px;
+    width: fit-content;
+    margin: auto;
+    padding: 12px;
+    align-items: center;
+    border-radius: 20px;
+}
+    /*CARDVIEW DE EVENTO*/
+    /*GRID IZQUIERDO*/
+.izq-grid-container {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    grid-template-rows: 2;
+    height: fit-content;
+}
+
+@media (max-width: 680px) {
+    .grid-container-1 {
+        grid-template-columns: 130px 230px;
+    }
+}
+
+.izq-grid-container-supe {
+    display: grid;
+    grid-row: 1;
+    grid-template-rows: 2;
+    height: fit-content;
+}
+
+.grid-item-titulo {
+    grid-row: 1;
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
+.grid-item-descripcion {
+    grid-row: 2;
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+}
+
+.izq-grid-container-infe {
+    display: grid;
+    grid-row: 2;
+    grid-template-rows: 3;
+    grid-template-columns: 2;
+    height: fit-content;
+}
+
+.grid-item-ubicacion-icon {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 2px;
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-image: url(../imagenes/mapas.png);
+    background-size: cover;
+    justify-self: right;
+
+}
+
+.grid-item-ubicacion {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 2px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.grid-item-fecha-icon {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 2px;
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-image: url(../imagenes/calendario.png);
+    background-size: cover;
+    justify-self: right;
+}
+
+.grid-item-fecha {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 2px;
+    padding: 2px;
+}
+
+.grid-item-hora-icon {
+    grid-column: 1;
+    grid-row: 3;
+    margin: 2px;
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-image: url(../imagenes/despertador.png);
+    background-size: cover;
+    justify-self: right;
+}
+
+.grid-item-hora {
+    grid-column: 2;
+    grid-row: 3;
+    margin: 2px;
+    padding: 2px;
+}
+
+    /*CARDVIEW DE EVENTO*/
+    /*GRID DERECHO*/
+.der-grid-container {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    grid-template-rows: 4;
+    height: fit-content;
+    justify-items: center;
+}
+
+#imagenUsuario {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+
+.grid-item-nomUsuario {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 12px;
+    padding: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.grid-item-edadUsuario {
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+    font-size: 12px;
+}
+
+.grid-item-botonAsistir {
+    grid-column: 1;
+    grid-row: 4;
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#buttonAsistitAmUsuarioPrincipal {
+    width: 68px;
+    height: 28px;
+    background-color: #0088FF;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 6px;
+    color: #EBEBEB;
+    border: none;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="../css_tardeo/layout_otros_eventos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>OTROS EVENTOS</title>
+</head>
+
+<body>
+
+    <!--BARRA DE BUSQUEDA POR CATEGORIA-->
+    <div class="cosa">
+        <div class="square square-izr-sup">
+            <button class="btn btn-primary" id="btnFiltroFecha">FECHA</button>
+            <button class="btn btn-secondary" id="btnFiltroCategoria">CATEGORÍA</button>
+            <button class="btn btn-success" id="btnFiltroUbi">UBICACIÓN</button>
+        </div>
+
+        <div class="square square-der-inf">
+            <input type="text" class="search-bar" placeholder="  BÚSQUEDA">
+            <button class="btn btn-primary" id="btnFiltroBuscar">BUSCAR</button>
+        </div>
+    </div>
+
+    <!--BARRA DE SEGMENTED-CONTROL CON DOS BOTONES ("CREAR EVENTO" - "MIS EVENTOS")-->
+    <div class="segmented-control">
+        <input type="radio" name="radio2" value="3" id="tab-1" checked />
+        <label for="tab-1" class="segmented-control__1">
+            <p id="textBtn">OTROS EVENTOS</p>
+        </label>
+
+        <input type="radio" name="radio2" value="4" id="tab-2" />
+        <label for="tab-2" class="segmented-control__2">
+            <p id="textBtn" onclick="entrarMisEventos()">MIS EVENTOS</p>
+        </label>
+        <div class="segmented-control__color"></div>
+    </div>
+
+    <!--GRID PARA AJUSTAR LA COSA DEL USUARIO Y LA COSA DE CARDVIEW DE EVENTOS-->
+    <div class="columnPrincipal">
+        <div class="red-square">
+            <!--IMAGEN DE USUARIO Y BOTONES DE CREAR EVENTOS Y MIS EVENTOS-->
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="../imagenes/gif_usuarios.gif" alt="image" id="imagenUsuarioPerfil">
+                </div>
+                <div class="grid-item">
+                    <p id="nomUsuario">Ada Ferrer</p>
+                </div>
+                <div class="grid-item">
+                    <div>
+                        <a href="../html_tardeo/layout_perfil_usuario.html">
+                        <button id="botonUno">INICIO</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="../html_tardeo/layout_crear_evento.html">
+                        <button id="botonDos">CREAR EVENTOS</button>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="columnPrincipal2">
+        <div class="green-square">
+            <!--TEXTO NOVEDADES-->
+            <h1>OTROS EVENTOS</h1>
+            <!--CARDVIEW DE EVENTO-->
+            <div class="grid-container-1">
+                <div class="izq-grid-container">
+                    <div class="izq-grid-container-supe">
+                        <div class="grid-item-titulo">Domingo de GOT</div>
+                        <div class="grid-item-descripcion">Domingo de GOT, La casa del dragon. Primer episodio</div>
+                    </div>
+
+                    <div class="izq-grid-container-infe">
+                        <div class="grid-item-ubicacion-icon"></div>
+                        <div class="grid-item-ubicacion">Cinesa La Maquinista</div>
+                        <div class="grid-item-fecha-icon"></div>
+                        <div class="grid-item-fecha">01/01/2023</div>
+                        <div class="grid-item-hora-icon"></div>
+                        <div class="grid-item-hora">21:00 H</div>
+                    </div>
+                </div>
+
+                <div class="der-grid-container">
+                    <div class="grid-item-imgUsuario">
+                        <img id="imagenUsuario"
+                            src="../imagenes/gif_usuarios.gif"
+                            alt="imagen de perfil del usuario">
+                    </div>
+
+                    <div class="grid-item-nomUsuario">Ada Ferrer</div>
+                    <div class="grid-item-edadUsuario">70 Años</div>
+
+                    <div class="grid-item-botonAsistir">
+                        <div class="checkbox">
+                            <div class="checkbox__1">
+                                <input id="checkbox-1" type="checkbox">
+                                <label for="checkbox-1">
+                                    <i class="material-icons">done</i></label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="../js_tardeo/layout_login.js"></script>
+</body>
+
+</html>

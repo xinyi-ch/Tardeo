@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="../css_tardeo/layout_perfil_usuario.css">
+    <title>PRINCIPAL</title>
+</head>
+
+<body>
+
+    <!--BARRA DE BUSQUEDA POR CATEGORIA-->
+    <div class="cosa">
+        <div class="square square-izr-sup">
+            <button class="btn btn-primary" id="btnFiltroFecha">FECHA</button>
+            <button class="btn btn-secondary" id="btnFiltroCategoria">CATEGORÍA</button>
+            <button class="btn btn-success" id="btnFiltroUbi">UBICACIÓN</button>
+        </div>
+
+        <div class="square square-der-inf">
+            <input type="text" class="search-bar" placeholder="  BÚSQUEDA">
+            <button class="btn btn-primary" id="btnFiltroBuscar">BUSCAR</button>
+        </div>
+    </div>
+
+    <!--GRID PARA AJUSTAR LA COSA DEL USUARIO Y LA COSA DE CARDVIEW DE EVENTOS-->
+    <div class="columnPrincipal">
+        <div class="red-square">
+            <!--IMAGEN DE USUARIO Y BOTONES DE CREAR EVENTOS Y MIS EVENTOS-->
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="../imagenes/gif_usuarios.gif" alt="image" id="imagenUsuarioPerfil">
+                </div>
+                <div class="grid-item">
+                    <p id="nomUsuario">Ada Ferrer</p>
+                </div>
+                <div class="grid-item">
+                    <div>
+                        <a href="../html_tardeo/layout_crear_evento.html">
+                            <button id="botonDos">CREAR EVENTOS</button>
+                        </a>    
+                    </div>
+                    <div>
+                        <a href="../html_tardeo/layout_mis_eventos.html">
+                            <button id="botonUno">MIS EVENTOS</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="columnPrincipal2">
+        <div class="green-square">
+            <!--TEXTO NOVEDADES-->
+            <h1>NOVEDADES</h1>
+            <!--CARRUSEL-->
+            <ul class="slider">
+                <!--CONTENEDOR CARRUSEL -- CARDVIEW DE EVENTO-->
+                <li id="slide1">
+                    <!--CARDVIEW DE EVENTO-->
+                    <div class="grid-container-1">
+                        <div class="izq-grid-container">
+                            <div class="izq-grid-container-supe">
+                                <div class="grid-item-titulo">Domingo de GOT</div>
+                                <div class="grid-item-descripcion">Domingo de GOT, La casa del dragon. Primer episodio
+                                </div>
+                            </div>
+                            <div class="izq-grid-container-infe">
+                                <div class="grid-item-ubicacion-icon"></div>
+                                <div class="grid-item-ubicacion">Cinesa La Maquinista</div>
+                                <div class="grid-item-fecha-icon"></div>
+                                <div class="grid-item-fecha">01/01/2023</div>
+                                <div class="grid-item-hora-icon"></div>
+                                <div class="grid-item-hora">21:00 H</div>
+                            </div>
+                        </div>
+                        <div class="der-grid-container">
+                            <div class="grid-item-imgUsuario">
+                                <img id="imagenUsuario"
+                                    src="../imagenes/gif_usuarios.gif"
+                                    alt="imagen de perfil del usuario">
+                            </div>
+                            <div class="grid-item-nomUsuario">Ada Ferrer</div>
+                            <div class="grid-item-edadUsuario">70 Años</div>
+                            <div class="grid-item-botonAsistir">
+                                <button id="buttonAsistitAmUsuarioPrincipal">ASISTIR</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--CONTENEDOR CARRUSEL -- CARDVIEW DE EVENTO-->
+                <li id="slide2">
+                    <!--CARDVIEW DE EVENTO-->
+                    <div class="grid-container-1">
+                        <div class="izq-grid-container">
+                            <div class="izq-grid-container-supe">
+                                <div class="grid-item-titulo">Avatar 2 en el cine </div>
+                                <div class="grid-item-descripcion">Peli de avatar en el cine con grandes butacas y el
+                                    mejor auiduo y pantalla</div>
+                            </div>
+                            <div class="izq-grid-container-infe">
+                                <div class="grid-item-ubicacion-icon"></div>
+                                <div class="grid-item-ubicacion">Cinesa La Maquinista</div>
+                                <div class="grid-item-fecha-icon"></div>
+                                <div class="grid-item-fecha">01/01/2023</div>
+                                <div class="grid-item-hora-icon"></div>
+                                <div class="grid-item-hora">21:00 H</div>
+                            </div>
+                        </div>
+                        <div class="der-grid-container">
+                            <div class="grid-item-imgUsuario">
+                                <img id="imagenUsuario"
+                                    src="../imagenes/gif_usuarios.gif"
+                                    alt="imagen de perfil del usuario">
+                            </div>
+                            <div class="grid-item-nomUsuario">Ada Ferrer</div>
+                            <div class="grid-item-edadUsuario">70 Años</div>
+                            <div class="grid-item-botonAsistir">
+                                <button id="buttonAsistitAmUsuarioPrincipal">HACER</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="slide3">
+
+                </li>
+
+                <li id="slide4">
+
+                </li>
+
+            </ul>
+            <!--CONTENEDOR CARRUSEL -- MENU DE BOTONES-->
+            <ul class="menuVis">
+                <li>
+                    <a href="#slide1">1</a>
+                </li>
+                <li>
+                    <a href="#slide2">2</a>
+                </li>
+                <li>
+                    <a href="#slide3">3</a>
+                </li>
+                <li>
+                    <a href="#slide4">4</a>
+                </li>
+            </ul>
+
+            <!--TEXTO "TARDEO EVENTOS"-->
+            <h1>TARDEO EVENTOS</h1>
+            <!--CARRUSEL-->
+            <ul class="slider">
+                <!--CONTENEDOR CARRUSEL -- CARDVIEW DE EVENTO-->
+                <li id="slidE1">
+                    <!--CARDVIEW DE EVENTO-->
+                    <div class="grid-container-1">
+                        <div class="izq-grid-container">
+                            <div class="izq-grid-container-supe">
+                                <div class="grid-item-titulo">Domingo de GOT</div>
+                                <div class="grid-item-descripcion">Domingo de GOT, La casa del dragon. Primer episodio
+                                </div>
+                            </div>
+                            <div class="izq-grid-container-infe">
+                                <div class="grid-item-ubicacion-icon"></div>
+                                <div class="grid-item-ubicacion">Cinesa La Maquinista</div>
+                                <div class="grid-item-fecha-icon"></div>
+                                <div class="grid-item-fecha">01/01/2023</div>
+                                <div class="grid-item-hora-icon"></div>
+                                <div class="grid-item-hora">21:00 H</div>
+                            </div>
+                        </div>
+                        <div class="der-grid-container">
+                            <div class="grid-item-imgUsuario">
+                                <img id="imagenUsuario"
+                                    src="../imagenes/gif_usuarios.gif"
+                                    alt="imagen de perfil del usuario">
+                            </div>
+                            <div class="grid-item-nomUsuario">Ada Ferrer</div>
+                            <div class="grid-item-edadUsuario">70 Años</div>
+                            <div class="grid-item-botonAsistir">
+                                <button id="buttonAsistitAmUsuarioPrincipal">ASISTIR</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--CONTENEDOR CARRUSEL -- CARDVIEW DE EVENTO-->
+                <li id="slidE2">
+                    <!--CARDVIEW DE EVENTO-->
+                    <div class="grid-container-1">
+                        <div class="izq-grid-container">
+                            <div class="izq-grid-container-supe">
+                                <div class="grid-item-titulo">Avatar 2 en el cine </div>
+                                <div class="grid-item-descripcion">Peli de avatar en el cine con grandes butacas y el
+                                    mejor auiduo y pantalla</div>
+                            </div>
+                            <div class="izq-grid-container-infe">
+                                <div class="grid-item-ubicacion-icon"></div>
+                                <div class="grid-item-ubicacion">Cinesa La Maquinista</div>
+                                <div class="grid-item-fecha-icon"></div>
+                                <div class="grid-item-fecha">01/01/2023</div>
+                                <div class="grid-item-hora-icon"></div>
+                                <div class="grid-item-hora">21:00 H</div>
+                            </div>
+                        </div>
+                        <div class="der-grid-container">
+                            <div class="grid-item-imgUsuario">
+                                <img id="imagenUsuario"
+                                    src="../imagenes/gif_usuarios.gif"
+                                    alt="imagen de perfil del usuario">
+                            </div>
+                            <div class="grid-item-nomUsuario">Ada Ferrer</div>
+                            <div class="grid-item-edadUsuario">70 Años</div>
+                            <div class="grid-item-botonAsistir">
+                                <button id="buttonAsistitAmUsuarioPrincipal">HACER</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="slidE3">
+
+                </li>
+
+                <li id="slidE4">
+
+                </li>
+
+            </ul>
+            <!--CONTENEDOR CARRUSEL -- MENU DE BOTONES-->
+            <ul class="menuVis">
+                <li>
+                    <a href="#slidE1">1</a>
+                </li>
+                <li>
+                    <a href="#slidE2">2</a>
+                </li>
+                <li>
+                    <a href="#slidE3">3</a>
+                </li>
+                <li>
+                    <a href="#slidE4">4</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
